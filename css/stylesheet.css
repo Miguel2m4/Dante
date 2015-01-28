@@ -52,6 +52,27 @@ textarea:focus, input:focus{
 	font-family: "OpenSans-Regular";
 	font-weight: 200;
 }
+.admi-empre .mas
+{
+	border: 1px solid #2D90E4;
+	border-radius: 3px;
+	background: none;
+	color: #2D90E4;
+	font-family: "OpenSans-Regular";
+	font-weight: 200;
+	margin-top: 1em;
+	text-decoration: none;
+	padding: 0.5em;
+	-webkit-transition: .3s;
+}
+.admi-empre .mas:hover
+{
+	border: 1px solid #2D90E4;
+	border-radius: 3px;
+	background: #2D90E4;
+	color: #fff;
+	-webkit-transition: .3s;
+}
 .admi-empre input[type=text] 
 {
 	display: block;
