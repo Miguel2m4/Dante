@@ -85,6 +85,18 @@ textarea:focus, input:focus{
 	width: 600px;
 	-webkit-transition: .3s;
 }
+.admi-empre input[type=number] 
+{
+	display: block;
+	border: none;
+	border-radius: 0.2em;
+	border: 2px solid #ddd;
+	height: 36px;
+	margin-bottom: 0.5em;
+	padding-left: 0.5em;
+	width: 600px;
+	-webkit-transition: .3s;
+}
 .admi-empre input[type=email] 
 {
 	display: block;
@@ -151,6 +163,11 @@ textarea:focus, input:focus{
 {
 	padding-bottom: 0.5em;
 	margin-bottom: 0.5em;
+}
+.admi-empre input[type=number]:focus
+{
+	border: 2px solid #2D90E4;
+	-webkit-transition:.3s;
 }
 .admi-empre p
 {
@@ -925,6 +942,7 @@ padding: 0.5em;
 	border: 2px solid #2D90E4;
 	-webkit-transition:.3s;
 }
+
 #perfil_empresa2 input[type=text]:focus
 {
 	border: 2px solid #2D90E4;
