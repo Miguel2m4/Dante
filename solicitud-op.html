@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Plataforma Dante </title>
+	<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body>
+<!-- <header>
+</header> -->
+<div id="fondo">
+
+<div id="menu">
+<div id="lateral">
+	<img src="images/logo.png">
+	<div id="menulateral">
+		<ul>
+			<a href="perfilempresa"><li>Perfil Empresa</li></a>
+			<a href="solicitud"><li>Solicitud</li></a>
+			<a href="proyectos"><li>Proyectos</li></a>			
+			<a href="historial-empresa"><li>Historial Empresa</li></a>
+			<a href="solicitud-us"><li>Solicitud Voz</li></a>
+			<a href="solicitud-op"><li>Solicitud Voz Op <span class="noti">52</span></li></a>
+			<a href=""><li>Buscar Solicitud </li></a>
+			<a href=""><li>Historial Voz</li></a>
+			<a href="administrar"><li>Administrar </li></a>
+			<a href="administracion"><li>Administración <span class="noti">52</span></li></a>
+			<a href=""><li id="salir">Salir </li></a>
+		</ul>
+	</div>
+</div>	
+</div>
+
+<div id="contenedor">
+<div id="topheader">
+	<div id="top-izquierdo">
+		<h2>Dante</h2>
+	</div>
+	<div id="top-derecho">
+		<form id="lado1">
+		<input type="text" placeholder="Buscar" required>
+		<input type="submit" value="Buscar">
+		</form>
+		  <a href="perfil" id="lado2">Miguel Gutierrez</a>
+	</div>
+</div>
+<div id="mensajeadmin">
+	<p>Este es un mensaje que envia el administrador, si no hay display none.</p>
+</div>
+	<div class="menu-admin">
+	<ul>
+		<a href="solicitud-op"><li>Solicitudes</li></a>
+		<a href="historial-voz-op"><li>Historial <span class="histo-not">52</span></li></a>
+	</ul>		
+	</div>
+<div class="contenido-secundario">
+
+	<div class="administra">
+	<div class="admi-empre">
+	<h2>Solicitud</h2>
+	<form>
+	<select>
+		<option value="">Ciudad</option>
+		<option value="">Mede-jean</option>
+	</select>	
+	<input type="text" placeholder="Nombre Empresa" required>
+	<input type="text" placeholder="Nombre" required>
+	<input type="text" placeholder="Apellido" required>
+	<input type="text" placeholder="Telefono" required>
+	<input type="email" placeholder="Correo" required>
+	<textarea placeholder="Describa la solicitud" required></textarea>
+	<select>
+		<option value="">Seleccione nivel de prioridad</option>
+		<option value="">Baja</option>
+		<option value="">Intermedia</option>
+		<option value="">Alta</option>
+	</select>	
+	<input type="submit" value="Generar">
+	</form>
+	</div>
+
+	<p>//Click en Generar se desaparece el formulario superior y se genera el de abajo solo si la prioridad en baja, si es intermedia o alta se genera y se escala</p>
+	<div class="admi-empre">
+	<h2>Solicitud</h2>
+	<p>En esta parte iria la solicitud que se aca de generar v En esta parte iria la solicitud que se aca de generar En esta parte iria la solicitud que se aca de generar En esta parte iria la solicitud que se aca de generar En esta parte iria la solicitud que se aca de generar En esta parte iria la solicitud que se aca de generar</p>
+	<textarea placeholder="Redactar el mensaje" required></textarea>
+	<input type="checkbox" name="escalar" value="Bike"> Escalar solictud<br>
+	<checkbox label="Escalar Solicitud" checked="true"/>
+	<div id="escala">
+	<select>
+		<option value="">Seleccione nivel de prioridad</option>
+		<option value="">Intermedia</option>
+		<option value="">Alta</option>
+	</select>
+	<input type="text" placeholder="Responsable" required>
+	</div>	
+	
+	<input type="submit" value="Generar">
+	</form>
+	</div>
+
+
+	</div>
+	
+
+</div><!-- //contenido-secundario -->
+</div>
+
+
+
+
+
+
+</div>
+</body>
+</html>

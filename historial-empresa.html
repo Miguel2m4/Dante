@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Plataforma Dante </title>
+	<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/stylesheet.css" />
+<link rel="stylesheet" href="css/jquery.remodal.css">
+</head>
+<body>
+<!-- <header>
+</header> -->
+<div id="fondo">
+
+<div id="menu">
+<div id="lateral">
+	<img src="images/logo.png">
+	<div id="menulateral">
+		<ul>
+			<a href="perfilempresa"><li>Perfil Empresa</li></a>
+			<a href="solicitud"><li>Solicitud</li></a>
+			<a href="proyectos"><li>Proyectos</li></a>			
+			<a href="historial-empresa"><li>Historial Empresa</li></a>
+			<a href="solicitud-us"><li>Solicitud Voz</li></a>
+			<a href="solicitud-op"><li>Solicitud Voz Op <span class="noti">52</span></li></a>
+			<a href=""><li>Buscar Solicitud </li></a>
+			<a href=""><li>Historial Voz</li></a>
+			<a href="administrar"><li>Administrar </li></a>
+			<a href="administracion"><li>Administración <span class="noti">52</span></li></a>
+			<a href=""><li id="salir">Salir </li></a>
+		</ul>
+	</div>
+</div>	
+</div>
+
+<div id="contenedor">
+<div id="topheader">
+	<div id="top-izquierdo">
+		<h2>Dante</h2>
+	</div>
+	<div id="top-derecho">
+		<form id="lado1">
+		<input type="text" placeholder="Buscar" required>
+		<input type="submit" value="Buscar">
+		</form>
+		  <a href="perfil" id="lado2">Miguel Gutierrez</a>
+	</div>
+</div>
+<div id="mensajeadmin">
+	<p>Este es un mensaje que envia el administrador, si no hay display none.</p>
+</div>
+
+<div class="contenido-secundario">
+	<div id="historialem">
+		<h2>Historial de solicitudes</h2>
+	</div>
+	<div class="historia-lienal">
+		<table class="historal-tabla">
+		<thead>
+			<td>Fecha</td>
+			<td>Asunto</td>
+			<td>Usuario</td>
+			<td>Ver</td>
+		</thead>
+		<tbody>
+			<tr>
+				<td>01-01-2015</td>
+				<td class="mayus">CONEXION INTRANET</td>
+				<td>Diana</td>
+				<td><a href="#modal" class="pend">Pendiente</a></td>
+			</tr>
+			<tr>
+				<td>01-01-2015</td>
+				<td class="mayus">COTIZAR SERVICIO EN LA NUBE PARA SUBIR INFORMACION DE LA INTRANET</td>
+				<td>Diana</td>
+				<td><a href="#modal" class="sol">Solución</a></td>
+			</tr>
+			<tr>
+				<td>01-01-2015</td>
+				<td class="mayus">CONEXION INTRANET</td>
+				<td>Diana</td>
+				<td><a href="" class="pend">Pendiente</a></td>
+			</tr>
+			<tr>
+				<td>01-01-2015</td>
+				<td class="mayus">COTIZAR SERVICIO EN LA NUBE PARA SUBIR INFORMACION DE LA INTRANET</td>
+				<td>Diana</td>
+				<td><a href="" class="sol">Solución</a></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+
+	
+
+</div><!-- //contenido-secundario -->
+
+
+
+
+
+
+<div class="remodal" data-remodal-id="modal">
+    <div class="sol-modal">
+    <h3>Asunto:</h3>
+    <p>COTIZAR SERVICIO EN LA NUBE PARA SUBIR INFORMACION DE LA INTRANET</p>
+    <h3>Solicitud:</h3>
+    <p>Conectar a la red interna de orbiotec, porque desde las redes externas si funciona.</p>
+    <div class="solucion-mod">
+    <h3>Solución: 12-01-2015</h3>	
+    <p>Se realiza la configuración en el servidor para que todos los usuarios de la red orbiotec puedan acceder a la Intranet, o aquellos que lleguen a conectarse a esta red Wifi.</p>
+    <h3>Datos Adjuntos:</h3>	
+    <a href="" class="icono-archivo"><span class="anombre"> Descargar Archivo</span></a>
+    </div>
+
+        
+  	
+    <br>
+    <br>
+    <a class="remodal-confirm" href="#">OK</a>
+
+    </div>
+</div>
+
+<!-- <div data-remodal-id="modal2">
+    <h1>Another one window</h1>
+    <p>
+        Hello!
+    </p>
+    <br>
+    <a class="remodal-confirm" href="#">Hello!</a>
+</div> -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
+<script src="js/jquery.remodal.js"></script>
+
+<!-- Events -->
+<script>
+    $(document).on("open", ".remodal", function () {
+        console.log("open");
+    });
+
+    $(document).on("opened", ".remodal", function () {
+        console.log("opened");
+    });
+
+    $(document).on("close", ".remodal", function (e) {
+        console.log('close' + (e.reason ? ", reason: " + e.reason : ''));
+    });
+
+    $(document).on("closed", ".remodal", function (e) {
+        console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+    });
+
+    $(document).on("confirm", ".remodal", function () {
+        console.log("confirm");
+    });
+
+    $(document).on("cancel", ".remodal", function () {
+        console.log("cancel");
+    });
+
+//    You can open or close it like this:
+//    $(function () {
+//        var inst = $.remodal.lookup[$("[data-remodal-id=modal]"").data("remodal")];
+//        inst.open();
+//        inst.close();
+//    });
+
+    //  Or init in this way:
+   /* var inst = $("[data-remodal-id=modal2]").remodal();*/
+    //  inst.open();
+</script>
+</div>
+</body>
+</html>

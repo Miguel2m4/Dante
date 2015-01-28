@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Plataforma Dante </title>
+	<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+<body>
+<!-- <header>
+</header> -->
+<div id="fondo">
+
+<div id="menu">
+<div id="lateral">
+	<img src="images/logo.png">
+	<div id="menulateral">
+		<ul>
+			<a href="perfilempresa"><li>Perfil Empresa</li></a>
+			<a href="solicitud"><li>Solicitud</li></a>
+			<a href="proyectos"><li>Proyectos</li></a>			
+			<a href="historial-empresa"><li>Historial Empresa</li></a>
+			<a href="solicitud-us"><li>Solicitud Voz</li></a>
+			<a href="solicitud-op"><li>Solicitud Voz Op <span class="noti">52</span></li></a>
+			<a href=""><li>Buscar Solicitud </li></a>
+			<a href=""><li>Historial Voz</li></a>
+			<a href="administrar"><li>Administrar </li></a>
+			<a href="administracion"><li>Administración <span class="noti">52</span></li></a>
+			<a href=""><li id="salir">Salir </li></a>
+		</ul>
+	</div>
+</div>	
+</div>
+
+<div id="contenedor">
+<div id="topheader">
+	<div id="top-izquierdo">
+		<h2>Dante</h2>
+	</div>
+	<div id="top-derecho">
+		<form id="lado1">
+		<input type="text" placeholder="Buscar" required>
+		<input type="submit" value="Buscar">
+		</form>
+		  <a href="perfil" id="lado2">Miguel Gutierrez</a>
+	</div>
+</div>
+<div id="mensajeadmin">
+	<p>Este es un mensaje que envia el administrador, si no hay display none.</p>
+</div>
+	<div class="menu-admin">
+	<ul>
+		<a href="solicitud-res"><li>Solicitudes</li></a>
+		<a href="administrar"><li>Empresa</li></a>
+		<a href="administrar"><li>Usuario</li></a>
+		<a href="administrar"><li>Usuario Operador</li></a>
+		<a href=""><li>Proyecto</li></a>		
+		<a href=""><li>Informes</li></a>
+	</ul>		
+	</div>
+<div class="contenido-secundario">
+
+	<div class="administra">
+	<div class="admi-empre">
+	<h2>Empresa</h2>
+	<select>
+		<option value="">Crear</option>
+		<option value="">Editar</option>
+	</select>
+	<select>
+		<option value="">Servicios</option>
+		<option value="">VoIP</option>
+	</select>
+	<select>
+		<option value="">Ciudad - Tangamandapio</option>
+	</select>
+	<form>
+	<input type="text" placeholder="Nombre Empresa" required>
+	<input type="text" placeholder="Nit" required>
+	<input type="text" placeholder="Telefono" required>
+	<input type="text" placeholder="Correo" required>
+	<input type="text" placeholder="Dirección" required>
+	<input type="submit" value="Guardar">
+	</form>
+	</div>
+
+	<p>//Click en usuario</p>
+	<div class="admi-empre">
+	<h2>Usuario</h2>
+	<select>
+		<option value="">Crear</option>
+		<option value="">Editar</option>
+	</select>
+	<form>
+	<input type="text" placeholder="Empresa a Ligar" required>
+	<input type="text" placeholder="Identificación" required>
+	<input type="text" placeholder="Contraseña" required>
+	<input type="text" placeholder="Nombre" required>
+	<input type="text" placeholder="Apellido" required>
+	<input type="email" placeholder="Correo" required>
+	<input type="text" placeholder="Telefono" required>
+	<input type="checkbox" name="adm" value="adm" required> Ususario Servicios<br>
+	<input type="checkbox" name="adm" value="adm" required> Usuario Voz IP<br>
+	<input type="submit" value="Guardar">
+	</form>
+	</div>
+
+	<p>//Click en usuario operadores</p>
+	<div class="admi-empre">
+	<h2>Usuario</h2>
+	<select>
+		<option value="">Crear</option>
+		<option value="">Editar</option>
+	</select>
+	<form>
+	<input type="text" placeholder="Identificación" required>
+	<input type="text" placeholder="Nombre" required>
+	<input type="text" placeholder="Apellido" required>
+	<input type="email" placeholder="Correo" required>
+	<input type="text" placeholder="Telefono" required>
+	<p>Tipo de usuario</p>
+	<input type="checkbox" name="adm" value="adm" required> Administración Voz<br>
+	<input type="checkbox" name="adm" value="adm" required> Administración Serv<br>
+	<input type="checkbox" name="adm" value="adm" required> Voz IP Operador<br>
+	<input type="submit" value="Guardar">
+	</form>
+	</div>
+
+
+	</div>
+	
+
+</div><!-- //contenido-secundario -->
+</div>
+
+
+
+
+
+
+</div>
+</body>
+</html>
